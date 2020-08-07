@@ -22,7 +22,9 @@ const validate= values=>{
     return errors
 }
 */
+
 const validationSchema = Yup.object({
+    date:"Empty",
     name:Yup.string().required("Required"),
     password:Yup.string().required("Required")
 })
